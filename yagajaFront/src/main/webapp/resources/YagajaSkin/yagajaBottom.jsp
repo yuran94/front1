@@ -101,13 +101,9 @@
 						<br data-reactid="343"> <!-- react-text: 344 -->ISMS<!-- /react-text -->
 					</em>
 					<div class="award__message" data-reactid="345">
-						<!-- react-text: 346 -->
 						[인증범위] 인터넷 정보 제공 서비스 운영(야놀자,바로예약,스마트프런트)
-						<!-- /react-text -->
 						<br data-reactid="347">
-						<!-- react-text: 348 -->
 						[유효기간] 2018.04.26 ~ 2021.04.25
-						<!-- /react-text -->
 					</div>
 				</div>
 			</div>
@@ -144,4 +140,4 @@
 				</div>
 			</section>
 		</footer>
-	</div>
+

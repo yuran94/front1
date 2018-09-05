@@ -38,12 +38,17 @@ public class YagajaMemberController {
 		return "Main/main";
 	}
 
-	//회원가입
+	//회원가입 동의페이지
 	@RequestMapping("/member/memberjoin.do")
-	public String join(Model model, HttpServletRequest req) {
+	public String memberjoin(Model model, HttpServletRequest req) {
 		return "member/memberjoin";
 	}
 	
+	//회원가입 페이지
+	@RequestMapping("/member/memberjoinForm.do")
+	public String memberjoinForm(Model model, HttpServletRequest req) {
+		return "member/memberjoinForm";
+	}
 
 	//로그인 페이지
 	@RequestMapping("/member/login.do")

@@ -65,7 +65,7 @@ function loginValidate(f){
 									</p>
 								</div>
 
-								<div class="login-cont phone-login-cont">
+								<!-- <div class="login-cont phone-login-cont">
 									<p>
 										아이디/비밀번호가 기억나지 않으시는 경우, <br />하단 휴대폰 번호로 로그인을 이용하시면 간편하게
 										로그인하실 수 있습니다.
@@ -73,7 +73,7 @@ function loginValidate(f){
 										<a href="/member/phonelogin" class="btn-default btn-phone-login" style="display: inline-block;">
 											휴대폰 번호 로그인
 										</a>
-								</div>
+								</div> -->
 
 								<div class="login-footcont">
 									<div class="btn-naver-login" id="social_link">
@@ -81,7 +81,7 @@ function loginValidate(f){
 									</div>
 									<p>
 										아직 야놀자 회원이 아니신가요? <br /> 
-										<a href="./memberjoin.jsp" title="회원가입" class="link-txt">회원가입</a>
+										<a href="./../member/memberjoin.do" title="회원가입" class="link-txt">회원가입</a>
 									</p>
 								</div>
 							</fieldset>

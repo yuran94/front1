@@ -2,9 +2,20 @@
 	pageEncoding="UTF-8"%>
 <!-- 야가자 상단 -->
 <%@include file="/resources/YagajaSkin/yagajaTop.jsp"%>
-<script src="../resources/bootstrap3.3.7/jquery/jquery-3.2.1.js"></script>
-<script type="text/javascript" src="../resources/bootstrap3.3.7/js/join.js"></script>
-<script type="text/javascript" src="../resources/bootstrap3.3.7/js/member.js"></script>
+<script src="../resources/bootstrap3.3.7/jquery/jquery-3.2.1.min.js"></script>
+<!-- <script type="text/javascript" src="../resources/bootstrap3.3.7/js/join.js"></script> -->
+<!-- <script type="text/javascript" src="../resources/bootstrap3.3.7/js/member.js"></script> -->
+<script>
+function agreeCheck(){
+	var chk = document.getElementById("allAgreeYN");
+	if(chk.checked==true){
+		location.href="./../member/memberjoinForm.do";
+	}
+	else{
+		alert("먼저 전체동의체크 해줘");
+	}
+}
+</script>
 <body>
 	<div class="app-content">
 		<div class="site-wrapper">
@@ -15,28 +26,30 @@
 							<h3>
 								이용 약관 동의
 								<div class="inp-checkbox-member">
-									<input type="checkbox" id="allAgreeYN" /> <label class=""
-										for="allAgreeYN">전체동의</label>
+									<input type="checkbox" id="allAgreeYN" /> 
+										<label class=""	for="allAgreeYN">
+											전체동의
+										</label>
 								</div>
 								<div class="inp-checkbox-member">
 									<input type="checkbox" id="isAvailableYN" data-required="true" />
-									<label class="" for="isAvailableYN">만 14세 이상입니다. <em>(필수)</em></label>
+										<label class="" for="isAvailableYN">만 14세 이상입니다. 
+											<em>(필수)</em>
+										</label>
 								</div>
 							</h3>
 
-							<form id="joinSelectForm" name="joinSelectForm" action="../frontSource/joinform.jsp" method="post"
+							<form id="joinSelectForm" name="joinSelectForm" action="" method="post"
 								class="form-group">
 								<input type="hidden" name="page_div" id="page_div" value="pc" />
-								<input type="hidden" name="redirect_url" id="redirect_url" 
-									value="https://www.yanolja.com/member/login" /> 
+								<input type="hidden" name="redirect_url" id="redirect_url" value="https://www.yanolja.com/member/login" /> 
 								<input type="hidden" name="certifyType" id="certifyType" value="1" />
 								<input type="hidden" name="isApp" id="isApp" value="N" /> 
 								<input type="hidden" name="appType" id="appType" value="" /> 
-									<input	type="hidden" name="social" id="social" value="" /> 
-									<input	type="hidden" name="naver" id="naver" value="" />
+								<input	type="hidden" name="social" id="social" value="" /> 
+								<input	type="hidden" name="naver" id="naver" value="" />
 									
 								<fieldset>
-								
 									<legend class="sc-out">이용 약관 동의</legend>
 
 									<div class="scroll-cont" style="overflow: scroll;">
@@ -346,10 +359,9 @@
 
 									<div class="scroll-cont" style="overflow: scroll;">
 										<div class="agreetext-head inp-checkbox-member">
-											<input type="checkbox" id="privacyAgreeYN"
-												name="privacyAgreeYN" data-required="true" /> <label
-												class="" for="privacyAgreeYN">개인정보 수집/이용 약관 동의 <em>(필수)</em></label>
-										</div>
+											<input type="checkbox" id="privacyAgreeYN" name="privacyAgreeYN" data-required="true" /> 
+											<label class="" for="privacyAgreeYN">개인정보 수집/이용 약관 동의 <em>(필수)</em></label>
+									</div>
 										<div class="agreetext-cont" id="privacy">
 											고객님께서는 동의를 거부하실 수 있으며, 동의 거부 시 회원가입이 제한됩니다.<br> <br>
 											<div class="tb_area">
@@ -559,29 +571,30 @@
 									<div class="checkbox-cont">
 										<div class="inp-checkbox-member">
 											<input type="checkbox" id="marketingAgreeYN"
-												name="marketingAgreeYN" /> <label class=""
-												for="marketingAgreeYN">마케팅 정보 수신 동의 <b>(선택)</b></label>
+												name="marketingAgreeYN" /> 
+												<label class="" for="marketingAgreeYN">마케팅 정보 수신 동의 <b>(선택)</b></label>
 										</div>
-										<div class="inp-checkbox-member">
+										<!-- <div class="inp-checkbox-member">
 											<input type="checkbox" id="restAgreeYN" name="restAgreeYN" />
-											<label class="" for="restAgreeYN">장기 미접속 시에도 계정 유지 <b>(선택)</b></label>
+												<label class="" for="restAgreeYN">장기 미접속 시에도 계정 유지 <b>(선택)</b></label>
 											<i class="color-pink">※ 미동의 시 1년 후 휴면계정 전환</i>
-										</div>
+										</div> -->
 									</div>
 
-									<button type="button" name="button"
-										class="btn-gradation disabled" id="btJoinAgree">다음</button>
+									<!-- <button type="button" name="button" class="btn-gradation disabled" id="btJoinAgree">다음</button> -->
+									
+									<!-- memberjoinForm으로 갈 수 있는 임시버튼만듬 -->
+									<a href="javascript:agreeCheck();"><button type="button" class="btn-gradation">다음</button></a>
 								</fieldset>
 							</form>
 						</section>
 					</div>
 				</article>
+				</div>
+			<%@include file="/resources/YagajaSkin/yagajaBottom.jsp"%>
 			</div>
 		</div>
-	</div>
-
-<%@include file="/resources/YagajaSkin/yagajaBottom.jsp"%>
-
+	</body>
 <script>
 	$(document).ready(function() {
 		getPolicy('service');

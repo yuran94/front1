@@ -11,17 +11,16 @@
 <script type="text/javascript" src="../resources/bootstrap3.3.7/js/common.js"></script>
 <script type="text/javascript" src="../resources/bootstrap3.3.7/js/ga.js"></script>
 
-
+<!-- <script src="../resources/bootstrap3.3.7/jquery/jquery-3.2.1.js"></script> -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 	
 <head data-reactid="2">
 <title data-reactid="3">야가자 : 대한민국 최저가 종합숙박 예약 | 공식 사이트</title>
 <script src="https://analysis.adinsight.co.kr/emnet/trs_esc.js"
 	id="TRS_script"></script>
-<script
-	src="https://cr.acecounter.com/Web/AceCounter_AW.js?gc=AH5A41667571241&amp;py=0&amp;gd=gtp2&amp;gp=8080&amp;up=NaPm_Ncisy&amp;rd=1533125320946"></script>
-<script
-	src="https://connect.facebook.net/signals/config/408076496057547?v=2.8.24&amp;r=stable"
+<script src="https://cr.acecounter.com/Web/AceCounter_AW.js?gc=AH5A41667571241&amp;py=0&amp;gd=gtp2&amp;gp=8080&amp;up=NaPm_Ncisy&amp;rd=1533125320946"></script>
+<script src="https://connect.facebook.net/signals/config/408076496057547?v=2.8.24&amp;r=stable"
 	async=""></script>
 <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
 <script async="" src="https://www.google-analytics.com/analytics.js"></script>
@@ -264,8 +263,11 @@
 						</div>
 				</span></li>
 				<li class="gnb__item"><a
+					href="/promotion/specialevent" >핫딜</a></li>
+				<li class="gnb__item"><a >경매</a>
+				<!-- <li class="gnb__item"><a
 					href="/promotion/specialevent" >기획전</a></li>
-				<li class="gnb__item"><a >캐스트</a></li>
+				<li class="gnb__item"><a >캐스트</a></li> -->
 			</ul>
 			<div class="top-links f-right" >
 				<ul >

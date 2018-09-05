@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.2.xsd">
+
+	<!-- 2단계 : 로그인 화면 커스터마이징 하기  -->
+	<!-- 
+		form-login 하위 설정
+		 	login-page : 커스텀 로그인 페이지를 지정함.
+		 	default-target-url : 로그인 후 기본으로 보여질 페이지를 지정함
+		 	authentication-failure-url : 로그인 실패 시 보여질 페이지
+		 	username-parameter : 로그인 시 사용할 아이디값
+		 	password-parameter : 로그인 시 사용할 패스워드값
+		 	※아이디/패스워드는 반드시 input태그의 name속성에 지정되어야 한다.
+		 
+		 logout 하위설정
+		 	logout-url : 로그아웃 시 사용될 URL 요청명
+		 	logout-success-url : 로그아웃에 성공했을 때 이동할 페이지
+		 	
+		 access-denied-handler 하위설정
+		 	error-page : 로그인 하였으나 권한이 없는 페이지를 요청할 때 이동할 페이지
+		 
+		 ※권한부여를 위한 권한명을 지정할 때 일반적으로 접두어 "ROLE_명칭" 형태로 제작한다.
+		 Ex) ROLE_ADMIN, ROLE_USER1 등
+		 
+		 ※intercept-url : 해당 속성을 지정할 때는 반드시 디테일한 권한(즉 작은권한) 을 먼저 지정한 후
+		 이후에 점차 큰 권한으로, 마지막에는 전체에 대한 권한을 지정해줘야한다.
+	 -->
+</beans>
