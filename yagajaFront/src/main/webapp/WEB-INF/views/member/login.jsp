@@ -82,6 +82,7 @@ function loginValidate(f){
 									<p>
 										아직 야놀자 회원이 아니신가요? <br /> 
 										<a href="./../member/memberjoin.do" title="회원가입" class="link-txt">회원가입</a>
+										ㅠㅠㅠㅠ
 									</p>
 								</div>
 							</fieldset>
